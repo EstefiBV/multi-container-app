@@ -25,6 +25,7 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 
 # install nodemon for hot-reloading
 RUN npm install -g nodemon
+docker compose up -d
 
 # Copy the rest of the source files into the image.
 COPY . .
